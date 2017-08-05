@@ -1,0 +1,105 @@
+/**
+ * Top Scope
+ */
+
+html {
+  background: #125B73;
+}
+
+body {
+  background: white;
+  box-shadow: 0 0 30px black;
+  margin: 0 auto;
+  width: 660px;
+}
+
+header#banner {
+  margin: 0 0 3em;
+  overflow: hidden;
+  position: relative;
+}
+
+#main {
+  padding: 10px 50px;
+}
+
+footer#contentinfo {
+  background: #0C3745;
+  border-top: 50px solid #42636E;
+  margin-top: 5em;
+  min-height: 150px;
+}
+
+/** 
+ * Typography
+ */
+
+p {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif",
+  Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia,
+  serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+  "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; 
+}
+
+
+
+/**
+ * Pacifics
+ */
+
+header#banner > h1 {
+  text-align: center;
+}
+header#banner > .site-description {
+  color: #555;
+  font-style: italic;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+#emulatorcontainer {
+  margin: 0 auto;
+  width: 512px;
+}
+
+canvas#emulatorwindow {
+  border: 2px solid black;
+}
+
+
+ul.links {
+  list-style-type: none;
+  width: 200px;
+}
+ul.links > li {
+  display: block;
+  font-size: 1.2em;
+}
+ul.links > li > a {
+  color: #fafafa; 
+  display: block;
+  padding: 3px 5px;
+  text-decoration: none;
+  width: 140px;
+}
+ul.links > li > a:hover {
+  background: #fafafa;
+  color: #0C3745;
+}
+
+ul.left-align {
+  float: left;
+}
+ul.right-align {
+  float: right;
+  text-align: right;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-au-compatible" content="ie=edge">
+    <title>Chris made a CHIP-8</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    
+    <header id="banner" role="banner">
+      <h1>CHIP-8</h1>
+      <p class="site-description">
+      ~ A work-in-progress CHIP-8 emulator ~
+      </p>
+    </header>
+
+    <div id="main" role="main">
+
+      <div class="container">
+        <div id="emulatorcontainer">
+          <canvas id="emulatorwindow"></canvas>
+        </div>
+
+        <div id="emulatorcontrols">
+          <h3>Controls</h3>
+          <pre>
+1 2 3 4
+Q W E R
+A S D F
+Z X C V
+        </pre>
+
+        <form onsubmit="javascript: loadGame(); return false;" id='emulatorselect'>
+          <select>
+            <option>15PUZZLE</option>
+            <option>BLINKY</option>
+            <option>BLITZ</option>
+            <option>BRIX</option>
+            <option>CONNECT4</option>
+            <option>GUESS</option>
+            <option>HIDDEN</option>
+            <option>INVADERS</option>
+            <option>KALEID</option>
+            <option>MAZE</option>
+            <option>MERLIN</option>
+            <option>MISSILE</option>
+            <option>PONG</option>
+            <option>PONG2</option>
+            <option>PUZZLE</option>
+            <option>SYZYGY</option>
+            <option>TANK</option>
+            <option>TETRIS</option>
+            <option>TICTAC</option>
+            <option>UFO</option>
+            <option>VBRIX</option>
+            <option>VERS</option>
+            <option>WIPEOFF</option>
+          </select>
+
+          <button type="submit">Play</button>
+        </form>
+        </div> <!-- /#emulatorcontrols -->
+
+      </div> <!-- /.container -->
+
+      <div id=debug style="position:absolute; bottom:0; right: 0; border: 5px solid
+      black"> 
+      </div>
+
+    </div> <!-- /#main -->
+
+    <footer id="contentinfo" role="contentinfo">
+      <ul class="links left-align">
+        <li><a href="https://github.com/christopherdoyle">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/christopher-doyle">LinkedIn</a></li>
+        <li><a href="https://christopherdoyle.github.io/">Personal Site</a></li>
+      </ul>
+      <ul class="links right-align">
+        <li><a href="https://github.com/christopherdoyle/js_chip8_emulator">Source Code</a></li>
+      </ul>
+    </footer>
+
+
+    <script src="js/jdataview.js"></script>
+    <script src="js/jbinary.js"></script>
+    <script src="js/chip8.js"></script>
+
+  </body>
+</html>
